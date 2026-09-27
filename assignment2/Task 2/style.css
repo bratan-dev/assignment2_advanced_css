@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.layout {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 300px 70px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #333333;
+    color: rgb(73, 73, 73);
+    padding: 20px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
